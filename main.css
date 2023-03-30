@@ -1,13 +1,102 @@
-body {
-	margin: 0;
+* {
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 }
-h1 {
-	color: brown;
-	font-family: Montserrat, serif;
+body {
+	font-family: 'Montserrat', sans-serif;
 }
-p {
+.container {
+	width: 100vw;
+	height: 130px;
+	background: linear-gradient(180deg, #72D6EC 43.43%, #72ECD6 87.88%);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+.logo {
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 25px;
+	margin: 0 100px;
+}	
+.btn-in {
+	width: 100px;
+	height: 40px;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #127380;
+	background: #EDF8FF;
+	border-radius: 7px;
+	border: none;
+	margin-left: 50px;
+}
+.btn-reg {
+	width: 150px;
+	height: 40px;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #127380;
+	background: #B6FDE3;
+	border: none;
+	border-radius: 7px;
+	margin-left: 15px;
+}
+.profile {
+	width: 75px;
+	height: 85px;
+	margin-right: 10px;
+}
+
+/*Поиск*/
+.search-box {
+	position: relative;
+	top: 20px;
+	/*justify-content: center;*/
+	transform: translate(-50%, -50%);
+	background: #fff;
+	height: 40px;
+	border-radius: 40px;
+	/*padding: 10px;*/
+	}
+	.search-box:hover > .search-txt {
+	width: 240px;
+	padding: 0 6px;
+	}
+	.search-box:hover > .search-btn {
+	background: white;
+	color: black;
+	}
+	.search-btn {
+	color: #eeeeee;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #127380;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+	color: white;
+	cursor: pointer;
+	text-decoration:none;
+	}
+	.search-btn > i {
+	font-size: 20px;
+	}
+	.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
 	color: #000;
-	font-family: serif;
-}
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+	font-weight: bold;
+	}
